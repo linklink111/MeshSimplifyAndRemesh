@@ -40,11 +40,11 @@
 
 边坍缩（Collapsing Edge）
 
-![image-20210925004646370](./images/collapse.png)
+![image-20210925004646370](../images/image-20210925004646370.png)
 
 二次度量误差
 
-![image-20210925004912224](./images/quadric.png)
+![image-20210925004912224](../images/image-20210925004912224.png)
 
 算法基本思想：对网格的每一条边计算二次误差，每次迭代，将二次误差最小的边移除（塌陷这条边），不断迭代并计算二次误差，直到达到目标三角形数。
 
@@ -56,7 +56,7 @@
 
 顶点$v=[\quad vx\quad vy\quad vz\quad 1\quad ]^T$ 的误差 $Δ(v)=v^TQv$ 。假设对于一条收缩边 $(v1,v2)$，其收缩后顶点变为 $vbar$ ，我们定义顶点 $vbar$ 的误差矩阵$Qbar=Q1+Q2$，对于如何计算顶点vbar的位置有两种策略：一种简单的策略就是在$v1,v2,(v1+v2)/2$中选择一个使得收缩代价$Δ(vbar)$最小的位置。另一种策略就是数值计算顶点$vbar$位置使得$Δ(vbar)$最小，由于Δ的表达式是一个二次项形式，因此令一阶导数为0，即，该式的解可表示为
 
-![image-20210924131342962](./images/q.png)
+![image-20210924131342962](../images/image-20210924131342962.png)
 
 求解方法：
 
@@ -138,7 +138,7 @@
 
 输入：
 
-![image-20210920101712438](./images/mesh_simplification_input.png)
+![image-20210920101712438](../images/image-20210920101712438.png)
 
 网格简化结果：
 
@@ -150,9 +150,9 @@
 
 
 
-![image-20210920190842701](./images/mesh_simplify_1_02_002.png)
+![image-20210920190842701](../images/image-20210920190842701.png)
 
-![image-20210920191218315](./images/mesh_simplification.png)
+![image-20210920191218315](../images/image-20210920191218315.png)
 
 
 <center><h2>重新网格化</h2><center>
@@ -171,15 +171,15 @@
 
 分割Split
 
-![image-20210925004345855](./images/edge_split.png)
+![image-20210925004345855](../images/image-20210925004345855.png)
 
 塌缩Collapse
 
-![image-20210925004355289](./images/edge_collapse.png)
+![image-20210925004355289](../images/image-20210925004355289.png)
 
 翻转Flip
 
-![image-20210925004403582](./images/edge_flip.png)
+![image-20210925004403582](../images/image-20210925004403582.png)
 
 ### 算法实现
 
@@ -255,20 +255,16 @@
 输入网格是一个在局部区域被密集环切的 suzanne
 输出网格为图片右边的网格
 
-![image-20210924001742644](./images/remesh_compare.png)
+![image-20210924001742644](../images/image-20210924001742644.png)
 
 输入网格：
-![image-20210924001958182](./images/remesh_input.png)
+![image-20210924001958182](../images/image-20210924001958182.png)
 输出网格：
 
-![image-20210924002047205](./images/remesh_output.png)
+![image-20210924002047205](../images/image-20210924002047205.png)
 
 ### 参考文献
 
 [1] Garland M . Surface Simplification Using Quadric Error Metrics[J]. SIGGRAPH 97, 1997.
 
 [2] Botsch M , Kobbelt L . A Remeshing Approach to Multiresolution Modeling[C]// Second Eurographics Symposium on Geometry Processing, Nice, France, July 8-10, 2004.
-
-视频地址：
-链接：https://pan.baidu.com/s/143gGlobRAGIxreGuejShng 
-提取码：eip0
