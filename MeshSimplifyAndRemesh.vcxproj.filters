@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\MeshSimplifyAndRemesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\Simplify.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\remesher.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\aabb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\closest_point_on_mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\command_line_arguments.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\command_line_options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\dual_contour.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\fast_marching_method.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\fixed_point.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\interpolation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\level_set.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\locality_sensitive_hashing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\marching_cubes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\mesh_signed_distance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\octree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\scope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\string_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\timed_scope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\unit_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\vec2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\vec3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\include\vtk_image_io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities-master\source\mesh_signed_distance\mesh_signed_distance_cgal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\aabb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\closest_point_on_mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\command_line_arguments.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\command_line_options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\dual_contour.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\fast_marching_method.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\fixed_point.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\interpolation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\level_set.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\locality_sensitive_hashing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\marching_cubes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\mesh_signed_distance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\octree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\options.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\scope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\string_utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\timed_scope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\triangle.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\unit_test.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\vec2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\vec3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\vtk_image_io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utilities\include\drand48.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\utilities-master\source\mesh_signed_distance\build\CMakeFiles\2.8.10.2\CMakeDetermineCompilerABI_C.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="inc\utilities-master\source\mesh_signed_distance\build\CMakeFiles\2.8.10.2\CMakeDetermineCompilerABI_CXX.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+运行命令暂存：
+
+./MeshSimplifyAndRemesh.exe -input E:\Users\Administrator\source\repos\MeshSimplifyAndRemesh\Models\suzanne_badmesh.obj -outputsimp E:\Users\Administrator\source\repos\MeshSimplifyAndRemesh\Models\suzanne_badmesh_process_by_meshsimplify.obj -ratio 0.5 -simplify true -remesh false -outputremesh E:\Users\Administrator\source\repos\MeshSimplifyAndRemesh\Models\suzanne_badmesh_temp.obj

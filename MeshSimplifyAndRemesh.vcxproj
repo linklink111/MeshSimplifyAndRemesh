@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{3697b861-4f68-4414-a2e2-ba96b2659959}</ProjectGuid>
+    <RootNamespace>MeshSimplifyAndRemesh</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)inc\utilities\include;$(ProjectDir);$(IncludePath);$(ProjectDir)inc</IncludePath>
+    <ExecutablePath>$(ProjectDir);$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)inc\utilities\include;$(ProjectDir)inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\MeshSimplifyAndRemesh.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\mesh.h" />
+    <ClInclude Include="inc\remesher.h" />
+    <ClInclude Include="inc\Simplify.h" />
+    <ClInclude Include="inc\utilities-master\include\aabb.h" />
+    <ClInclude Include="inc\utilities-master\include\closest_point_on_mesh.h" />
+    <ClInclude Include="inc\utilities-master\include\command_line_arguments.h" />
+    <ClInclude Include="inc\utilities-master\include\command_line_options.h" />
+    <ClInclude Include="inc\utilities-master\include\dual_contour.h" />
+    <ClInclude Include="inc\utilities-master\include\fast_marching_method.h" />
+    <ClInclude Include="inc\utilities-master\include\fixed_point.h" />
+    <ClInclude Include="inc\utilities-master\include\interpolation.h" />
+    <ClInclude Include="inc\utilities-master\include\level_set.h" />
+    <ClInclude Include="inc\utilities-master\include\locality_sensitive_hashing.h" />
+    <ClInclude Include="inc\utilities-master\include\marching_cubes.h" />
+    <ClInclude Include="inc\utilities-master\include\mesh_signed_distance.h" />
+    <ClInclude Include="inc\utilities-master\include\octree.h" />
+    <ClInclude Include="inc\utilities-master\include\options.h" />
+    <ClInclude Include="inc\utilities-master\include\scope.h" />
+    <ClInclude Include="inc\utilities-master\include\string_utils.h" />
+    <ClInclude Include="inc\utilities-master\include\timed_scope.h" />
+    <ClInclude Include="inc\utilities-master\include\triangle.h" />
+    <ClInclude Include="inc\utilities-master\include\unit_test.h" />
+    <ClInclude Include="inc\utilities-master\include\vec2.h" />
+    <ClInclude Include="inc\utilities-master\include\vec3.h" />
+    <ClInclude Include="inc\utilities-master\include\vtk_image_io.h" />
+    <ClInclude Include="inc\utilities-master\source\mesh_signed_distance\mesh_signed_distance_cgal.h" />
+    <ClInclude Include="inc\utilities\include\aabb.h" />
+    <ClInclude Include="inc\utilities\include\closest_point_on_mesh.h" />
+    <ClInclude Include="inc\utilities\include\command_line_arguments.h" />
+    <ClInclude Include="inc\utilities\include\command_line_options.h" />
+    <ClInclude Include="inc\utilities\include\drand48.h" />
+    <ClInclude Include="inc\utilities\include\dual_contour.h" />
+    <ClInclude Include="inc\utilities\include\fast_marching_method.h" />
+    <ClInclude Include="inc\utilities\include\fixed_point.h" />
+    <ClInclude Include="inc\utilities\include\interpolation.h" />
+    <ClInclude Include="inc\utilities\include\level_set.h" />
+    <ClInclude Include="inc\utilities\include\locality_sensitive_hashing.h" />
+    <ClInclude Include="inc\utilities\include\marching_cubes.h" />
+    <ClInclude Include="inc\utilities\include\mesh_signed_distance.h" />
+    <ClInclude Include="inc\utilities\include\octree.h" />
+    <ClInclude Include="inc\utilities\include\options.h" />
+    <ClInclude Include="inc\utilities\include\scope.h" />
+    <ClInclude Include="inc\utilities\include\string_utils.h" />
+    <ClInclude Include="inc\utilities\include\timed_scope.h" />
+    <ClInclude Include="inc\utilities\include\triangle.h" />
+    <ClInclude Include="inc\utilities\include\unit_test.h" />
+    <ClInclude Include="inc\utilities\include\vec2.h" />
+    <ClInclude Include="inc\utilities\include\vec3.h" />
+    <ClInclude Include="inc\utilities\include\vtk_image_io.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="inc\utilities-master\source\mesh_signed_distance\build\CMakeFiles\2.8.10.2\CMakeDetermineCompilerABI_C.bin" />
+    <None Include="inc\utilities-master\source\mesh_signed_distance\build\CMakeFiles\2.8.10.2\CMakeDetermineCompilerABI_CXX.bin" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

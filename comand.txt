@@ -1,0 +1,1 @@
+./Debug/MeshSimplifyAndRemesh.exe E:\Users\Administrator\source\repos\MeshSimplifyAndRemesh\Models\suzanne.obj E:\Users\Administrator\source\repos\MeshSimplifyAndRemesh\Models\suzanne_sim02.obj 0.2
